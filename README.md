@@ -1,65 +1,61 @@
-# 🐍 Python Piscine - Module 00
+# 🌱 Python Piscine - Module 00 | Starting
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10+-blue? style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
   <img src="https://img.shields.io/badge/42-Network-000000?style=for-the-badge&logo=42&logoColor=white" alt="42"/>
-  <img src="https://img.shields.io/badge/Score-In%20Progress-orange?style=for-the-badge" alt="Score"/>
+  <img src="https://img.shields.io/badge/Score-100%2F100-brightgreen?style=for-the-badge" alt="Score"/>
 </p>
 
 ## 📖 About
 
-This repository contains my solutions for **Module 00** of the 42 Network Python Piscine. This module introduces the basics of Python programming, focusing on fundamental concepts and syntax.
+This repository contains my solutions for **Module 00 - Starting** of the 42 Network Python Piscine.  This garden-themed module introduces the fundamentals of Python programming, covering basic syntax, data types, functions, and type annotations.
 
-## 🎯 Objectives
+## 🎯 Learning Objectives
 
-- Discover Python syntax and conventions
-- Learn basic data types and operations
-- Understand string manipulation
-- Practice with functions and control flow
-- Follow PEP 8 coding standards
+- ✅ Understand Python syntax and conventions
+- ✅ Work with basic data types (strings, integers, floats, booleans)
+- ✅ Perform arithmetic operations and string manipulation
+- ✅ Use conditional statements and control flow
+- ✅ Create and call functions
+- ✅ Implement type annotations in Python
+- ✅ Follow PEP 8 coding standards
 
 ## 📂 Project Structure
 
 ```
 python00/
 │
-├── ex00/            # Exercise 00 - Hello World
-│   └── Hello.py
+├── ex00/                 # Hello Garden
+│   └── hello_garden.py
 │
-├── ex01/            # Exercise 01 - ... 
-│   └── ...
+├── ex01/                 # Garden Plot Area
+│   └── garden_plot_area.py
 │
-├── ex02/            # Exercise 02 - ...
-│   └── ...
+├── ex02/                 # Harvest Total
+│   └── harvest_total.py
 │
-├── ex03/            # Exercise 03 - ... 
-│   └── ... 
+├── ex03/                 # Plant Age Check
+│   └── plant_age_check.py
 │
-├── ex04/            # Exercise 04 - ...
-│   └── ...
+├── ex04/                 # Water Reminder
+│   └── water_reminder.py
 │
-├── ex05/            # Exercise 05 - ...
-│   └── ... 
+├── ex05/                 # Count Harvest
+│   └── count_harvest.py
 │
-├── ex06/            # Exercise 06 - ... 
-│   └── ...
+├── ex06/                 # Garden Summary
+│   └── garden_summary.py
 │
-├── ex07/            # Exercise 07 - ...
-│   └── ...
+├── ex07/                 # Seed Inventory (with Type Annotations)
+│   └── seed_inventory.py
 │
-├── ex08/            # Exercise 08 - ... 
-│   └── ... 
-│
-├── ex09/            # Exercise 09 - ...
-│   └── ...
-│
-└── README.md
+└── README. md
 ```
 
 ## 🔧 Requirements
 
 - Python 3.10 or higher
-- No external libraries (unless specified)
+- No external libraries required
 
 ## 💻 Installation & Usage
 
@@ -75,60 +71,98 @@ cd python00
 
 3. Run any exercise:
 ```bash
-python3 ex00/ft_...
+python3 ex00/hello_garden.py
 ```
 
-## 📋 Exercises
+## 📋 Exercises Overview
 
-| Exercise |          Description             | Status |
-|----------|----------------------------------|--------|
-| ex00 | Hello Garden                         |   ✅   |
-| ex01 | Garden pPlot Area                    |   ✅   |
-| ex02 | Harvest Total                        |   ✅   |
-| ex03 | Plant Age Check                      |   ✅   |
-| ex04 | Water Reminder                       |   ✅   |
-| ex05 | Count To Harvest                     |   ✅   |
-| ex06 | Garden Summary                       |   ✅   |
-| ex07 | Seed Iventory With Type Annotations  |   ✅   |
+| Exercise | Name | Description | Status |
+|----------|------|-------------|--------|
+| ex00 | **Hello Garden** | Introduction to Python with a simple print statement | ✅ |
+| ex01 | **Garden Plot Area** | Calculate the area of a garden plot using basic arithmetic | ✅ |
+| ex02 | **Harvest Total** | Sum up harvest quantities using arithmetic operations | ✅ |
+| ex03 | **Plant Age Check** | Use conditional statements to check plant maturity | ✅ |
+| ex04 | **Water Reminder** | Implement control flow for watering schedule reminders | ✅ |
+| ex05 | **Count Harvest** | Count and process harvest data using loops and recursion| ✅ |
+| ex06 | **Garden Summary** | Generate a comprehensive summary of garden statistics | ✅ |
+| ex07 | **Seed Inventory** | Manage seed inventory with Python type annotations | ✅ |
 
-> ✅ = Completed | ⏳ = In Progress | ❌ = Not Started
+## 🌻 Exercise Details
+
+### Ex00 - Hello Garden
+> First steps in Python - printing a welcome message to the garden. 
+
+### Ex01 - Garden Plot Area
+> Calculate garden plot dimensions using variables and arithmetic operators.
+
+### Ex02 - Harvest Total
+> Sum multiple harvest values to get total yield.
+
+### Ex03 - Plant Age Check
+> Use `if/elif/else` statements to determine plant growth stages.
+
+### Ex04 - Water Reminder
+> Implement logic for plant watering schedule notifications.
+
+### Ex05 - Count Harvest
+> Iterate through harvest data and count items.
+
+### Ex06 - Garden Summary
+> Combine all concepts to create a complete garden status report.
+
+### Ex07 - Seed Inventory (Type Annotations)
+> Manage inventory using Python type hints for better code clarity: 
+```python
+def add_seeds(name: str, quantity:  int) -> dict:
+    ... 
+```
 
 ## 🧪 Testing
 
-To test your exercises, run:
+Run exercises manually:
 ```bash
-python3 -m pytest  # If tests are provided
+python3 ex00/hello_garden. py
+python3 ex01/garden_plot_area.py
+# ... etc
 ```
 
-Or manually:
-```bash
-python3 exXX/file.py
-```
-
-## 📝 Norme & Style
-
-This project follows:
-- **flake8** - Python Style Guid
-- **42 Python Piscine** coding standards
-
-Check your code with:
+Check code style with flake8:
 ```bash
 pip install flake8
-flake8 your_file.py
+flake8 . 
 ```
+
+Verify type annotations with mypy:
+```bash
+pip install mypy
+mypy ex07/seed_inventory.py
+```
+
+## 📝 Code Standards
+
+This project follows:
+- **PEP 8** - Python Style Guide
+- **PEP 484** - Type Hints
+- **42 Python Piscine** coding standards
 
 ## 👤 Author
 
-**Abdellah Chtai**
-- 42 Login: `abchtaib` (replace with your actual login)
+**Abdellah Chtaibi**
+- 42 Intra:  `abchtaib`
 - GitHub: [@abdellahchtai](https://github.com/abdellahchtai)
 
-## 📜 License
+## 📜 Disclaimer
 
-This project is part of the 42 Network curriculum.  
+This project is part of the **42 Network Python Piscine** curriculum. 
+
 
 ---
 
 <p align="center">
-  Made with ❤️ at 42 Network
+  <img src="https://img.shields.io/badge/Module-00-green?style=flat-square" alt="Module"/>
+  <img src="https://img.shields.io/badge/Completed-January%202026-blue?style=flat-square" alt="Completed"/>
+</p>
+
+<p align="center">
+  Made with 🌱 and ❤️ at 42 Network
 </p>
